@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # Continuous delivery project of a maching learning application using azure, flask and sklearn
 
 ## Introduction
