@@ -1,25 +1,25 @@
 <<<<<<< HEAD
 
-# flask-sklearn
+# Continuous delivery project of a maching learning application using azure, flask and sklearn
 
-=======
+## Introduction
 
-# Overview
-
-<TODO: complete this with an overview of your project>
+In this project, you will focus on creating a continuous delivery cycle with azure pipelines, using a given code for maching learning application (that you will not develop yourself) which will be hosted in github, and azure portal to create environement on which your application will be deployed.
 
 ## Project Plan
 
-<TODO: Project Plan
+We use for planning trello to track tasks as tickets and spreadsheet with weekly planning per year
 
 - A link to a Trello board for the project
 - A link to a spreadsheet that includes the original and final project plan>
 
 ## Instructions
 
-<TODO:
+#### Setup environment
 
-- Architectural Diagram (Shows how key parts of the system work)>
+Clone this repository:
+
+- git clone ::
 
 <TODO: Instructions for running the Python project. How could a user with no context run this project without asking you for any help. Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
