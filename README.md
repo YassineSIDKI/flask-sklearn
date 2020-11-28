@@ -26,21 +26,23 @@ We use for planning trello to track tasks as tickets and spreadsheet with weekly
 
 - Create a new repository in github
 
-- Clone this repo in azure shell
-
-- Delete azurepipeline.yml. This file will be created later and push the code
-
-- Check that your tests are passing localy : make all. Put output here
+- From azure cloud shell, clone this repo
 
 - Push your code to newly created github repo
 
 - Run the project on azure app service. For that use the commande az webapp up --name "". Be sure that. Put output here
 
+az webapp output
+
 - If your project is successfuly deployed you should have the following output-like: You can return to for more information [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+
+home page app output
 
 - From dev azure, create a project. Put output
 
 - Add github repo to this project. To do that you should already ssh key
+
+- Delete azure pipeline yaml
 
 - Choose the azure app service already created
 
@@ -49,6 +51,11 @@ We use for planning trello to track tasks as tickets and spreadsheet with weekly
 - Save and run. You can check in your github repo that azurepipelines.yml already created.
 
 - Check that your pipelines is finished and already deployed the app
+
+- Update the script part with the followin
+  make setup
+  make install
+  make lint
 
 - Now to check that your continuous delivery cycle is well set, do some changes in your app. For exemple : Push this changes
 
@@ -66,7 +73,10 @@ Port: 443
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+Some improvment ideas:
+
+- Add support of github actions
+-
 
 ## Demo
 
