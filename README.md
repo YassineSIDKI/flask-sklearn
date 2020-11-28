@@ -16,11 +16,11 @@ We use for planning trello to track tasks as tickets and spreadsheet with weekly
 - Have a azure account
 - Have a github account
 
-## Instructions
-
-#### Architecture
+## Architecture
 
 ![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/diagram.png?raw=true)
+
+## Instructions
 
 #### Setup environment
 
