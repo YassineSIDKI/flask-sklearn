@@ -20,6 +20,8 @@ We use for planning trello to track tasks as tickets and spreadsheet with weekly
 
 #### Architecture
 
+![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/diagram.png?raw=true)
+
 #### Setup environment
 
 - Create a new repository in github
