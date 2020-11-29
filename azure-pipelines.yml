@@ -50,6 +50,9 @@ stages:
             workingDirectory: $(projectRoot)
             displayName: "lint"
 
+          - script: make test
+            workingDirectory: $(projectRoot)
+            displayName: "load testing"
           - task: ArchiveFiles@2
             displayName: "Archive files"
             inputs:
