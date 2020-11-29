@@ -1,4 +1,4 @@
-![Python application test with github actions](https://github.com/YassineSIDKI/flask-sklearn/workflows/Python%20application/badge.svg)
+![Python app](https://github.com/YassineSIDKI/flask-sklearn/workflows/Python%20application/badge.svg)
 
 # Continuous delivery project of a maching learning application using azure, flask and sklearn
 
