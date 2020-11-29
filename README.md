@@ -8,8 +8,9 @@ In this project, you will focus on creating a continuous delivery cycle with azu
 
 We use for planning trello to track tasks as tickets and spreadsheet with weekly planning per year
 
-- A link to a Trello board for the project
-- A link to a spreadsheet that includes the original and final project plan>
+- A link to a Trello board for the project ![alt text](https://trello.com/b/M5gD0IY3/udacity)
+
+- A link to a spreadsheet that includes the original and final project plan> ![alt text](https://docs.google.com/spreadsheets/d/1Rr-CEzN8tzZDGDlJFyEK2E43slvz5DyTLUpM4616OeA/edit#gid=1348135932)
 
 ## Prerequisites
 
@@ -75,7 +76,7 @@ Port: 443
 
 Some improvment ideas:
 
-- Add support of github actions
+- Add creation of necessary resources with terraform : resource group and webapp service
 -
 
 ## Demo
