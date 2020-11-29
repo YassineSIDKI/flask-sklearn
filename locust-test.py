@@ -33,7 +33,8 @@ class flask_sklearn(HttpUser):
 
         myheaders = {'Content-Type': 'application/json'}
 
-        response = self.client.post(
-            "/predict", json=json_request, headers=myheaders)
-
-        print(response.json())
+        with self.client.post("/predict", json=json_request, headers=myheaders) as response:
+            if response.success():
+                pass
+            else:
+                raise Exception('Load tests fails')
