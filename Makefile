@@ -9,7 +9,7 @@ install:
 test:
 	#python -m pytest -vv --cov=myrepolib tests/*.py
 	#python -m pytest --nbval notebook.ipynb
-	locust -f locust-test.py --headless
+	locust -f locust-test.py --headless -t 1m
 
 
 lint:

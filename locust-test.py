@@ -6,7 +6,7 @@ nb_user = 10
 
 class flask_sklearn(HttpUser):
 
-    host = "https://flask-sklearn-1.azurewebsites.net:433"
+    host = "https://flask-sklearn-1.azurewebsites.net:443"
 
     @task(nb_user)
     def predict(self):
@@ -33,8 +33,4 @@ class flask_sklearn(HttpUser):
 
         myheaders = {'Content-Type': 'application/json'}
 
-        with self.client.post("/predict", json=json_request, headers=myheaders) as response:
-            if response.success():
-                pass
-            else:
-                raise Exception('Load tests fails')
+        self.client.post("/predict", json=json_request, headers=myheaders)
