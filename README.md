@@ -120,13 +120,29 @@ jobs:
 
 ```
 
-- Save and run. You can check in your github repo that azurepipelines.yml already created.
-  ![alt text](azwebapp)
+- Save and run. You can check in your github that azurepipelines.yml already created.
 
 - Check that your pipelines is finished and already deployed the app
-  ![alt text](azwebapp)
+  ![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/azurepipelinesrunnning.png?raw=true)
 
-- Now to check that your continuous delivery cycle is well set, do some changes in your text app. For exemple : Push this changes
+- Good news : Your continuous delivery cycle is set. To check that your continuous delivery cycle is well set, do some changes in your app.py and push.
+  Replace this
+
+```
+@app.route("/")
+def home():
+    html = "<h3>Sklearn Prediction Home</h3>"
+    return html.format(format)
+```
+
+by this
+
+```
+@app.route("/")
+def home():
+    html = "<h3>Sklearn Prediction Home - change to trigger pipeline</h3>"
+    return html.format(format)
+```
 
 - The pipeline should run automaticaly and the new app deployed should show this:
 
