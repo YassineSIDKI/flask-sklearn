@@ -73,7 +73,7 @@ jobs:
 
 After you save and run, you can see in github actions tab a job running
 
-![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/jobgithub.png?raw=true)
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/githubjob.png?raw=true)
 
 To create azure webapp service, from azure shell run `./commands.sh` from root folder
 
