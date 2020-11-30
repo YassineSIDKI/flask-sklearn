@@ -8,7 +8,7 @@ class flask_sklearn(HttpUser):
 
     host = "https://flask-sklearn-1.azurewebsites.net:443"
 
-    @task(nb_user)
+    @task
     def predict(self):
         json_request = {
             "CHAS": {

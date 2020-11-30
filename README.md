@@ -137,7 +137,8 @@ Port: 443
 
 Some improvment ideas:
 
-- Add creation of necessary resources with terraform : resource group and webapp service
+- Add terrafom file to create needed resources in case we want to use specific resource group for example
+- Add different environments : dev, qa and prod
 -
 
 ## Demo
