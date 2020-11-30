@@ -146,7 +146,7 @@ def home():
 
 - The pipeline should run automaticaly and the deployment is done successfuly. Check the app url and check the home page. You should get this result
 
-![alt text]()
+![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/homepagechanged.png?raw=true)
 
 - from azure shell, run the command and check the result
 
