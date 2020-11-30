@@ -67,17 +67,14 @@ jobs:
         make test
 ```
 
-- You can see in github actions tab a started job
+- After you save and run, you can see in github actions tab a job running
+  ![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/jobgithub.png?raw=true)
 
-![alt text](githubjob)
+- To create azure webapp service, from azure shell run `./commands.sh` from root folder
+  ![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/az%20webapp.png?raw=true)
 
-- run ./commands.sh from azure shell
-
-![alt text](azwebapp)
-
-- You can check that your project is correctly deployed by visiting the url in last output. You should see result like:
-
-![alt text](home page screenshot)
+- You can check that your project is correctly deployed by visiting the URL figured in output. You should see result like:
+  ![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/homepage.png?raw=true)
 
 - From dev azure, create a project.
   ![alt text](create project azure)
