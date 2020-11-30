@@ -1,1 +1,1 @@
-az webapp -n $0
+az webapp -n <yourAppName>

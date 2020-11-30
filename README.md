@@ -1,10 +1,10 @@
 ![Python application using Github Actions](https://github.com/YassineSIDKI/flask-sklearn/workflows/Python%20application%20using%20Github%20Actions/badge.svg)
 
-# Continuous delivery project of a maching learning application using azure, flask and sklearn
+# Continuous delivery for ML Flask and Sklearn project using Azure
 
 ## Introduction
 
-In this project, you will focus on creating a continuous delivery cycle with azure pipelines, using a given code for maching learning application (that you will not develop yourself) which will be hosted in github, and azure portal to create environement on which your application will be deployed.
+In this project, you will focus on creating a continuous delivery cycle with azure pipelines, using a given code for maching learning application (that you will not develop yourself), and azure portal to create environement on which your application will be deployed.
 
 ## Project Plannig
 
@@ -21,28 +21,27 @@ We use for planning trello to track tasks as tickets and spreadsheet with weekly
 
 ## Architecture
 
-![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/diagram.png?raw=true)
+![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/diagram-v2.png?raw=true)
 
 ## Instructions
 
 - Create a new github repository
 
 - From azure cloud shell, clone this repo
-  ![alt text](output)
+  ![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/clonerepo.png?raw=true)
 
-- Run make setup command
+- You can run this command to check that the Makefile commands working. If you face some error during locust install, check that you have python version >=3.6
 
-- Activate virtual env python source
+```
+make setup && source ~/.udacity-devops/bin/activate && make all
+```
 
-- Run make all
-  ![alt text](make all)
-
-- Delete all .yaml files and update make_prediction and commands by replacing the yourappname var with the same value in the both files. Then push the project to github repo
+- Delete all .yml files and change the <yourAppName> in `make_predict_azure_app.sh` and `commands.sh` by name you will give to your web app. It should be the same name in both files. Then push the project to github repo
 
 - From your github repo, add new github actions workflow
-  ![alt text](github actions)
+  ![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/githubactions.png?raw=true)
 
-- Choose Python application workflow and change the script part in yaml file with the following
+- Choose Python application workflow and change the `jobs` part in yaml file with the following
 
 ```
 jobs:
