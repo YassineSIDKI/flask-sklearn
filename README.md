@@ -21,7 +21,7 @@ We use for planning trello to track tasks as tickets and spreadsheet with weekly
 
 ## Architecture
 
-![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/diagram-v2.png?raw=true)
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/diagramv3.png?raw=true)
 
 ## Instructions
 
