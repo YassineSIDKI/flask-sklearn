@@ -1,4 +1,4 @@
-![Python application using Github Actions](https://github.com/YassineSIDKI/flask-sklearn/workflows/Python%20application%20using%20Github%20Actions/badge.svg)
+![Python app](https://github.com/YassineSIDKI/flask-sklearn/workflows/Python%20application/badge.svg)
 
 # Continuous delivery project of a maching learning application using azure, flask and sklearn
 
@@ -30,8 +30,6 @@ We use for planning trello to track tasks as tickets and spreadsheet with weekly
 - From azure cloud shell, clone this repo
   ![alt text](output)
 
-- Push your code to the newly created github repo
-
 - Run make setup command
 
 - Activate virtual env python source
@@ -39,39 +37,89 @@ We use for planning trello to track tasks as tickets and spreadsheet with weekly
 - Run make all
   ![alt text](make all)
 
+- Delete all .yaml files and update make_prediction and commands by replacing the yourappname var with the same value in the both files. Then push the project to github repo
+
 - From your github repo, add new github actions workflow
   ![alt text](github actions)
 
-- Replace <yourappname> in commands.sh then run the command ./commands.sh. The <yourappname> value is the same you will use in the file make_prediction
+- Choose Python application workflow and change the script part in yaml file with the following
+
+```
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+    - name: Setup environrmrnet
+      run: |
+        make setup
+    - name: Install dependencies
+      run: |
+        make install
+    - name: Lint with pytest
+      run: |
+        make lint
+    - name: Test with locust
+      run: |
+        make test
+```
+
+- You can see in github actions tab a started job
+
+![alt text](githubjob)
+
+- run ./commands.sh from azure shell
 
 ![alt text](azwebapp)
 
--
+- You can check that your project is correctly deployed by visiting the url in last output. You should see result like:
 
-- If your project is successfuly deployed you should have the following output-like: You can return to for more information [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+![alt text](home page screenshot)
 
-home page app output
+- From dev azure, create a project.
+  ![alt text](create project azure)
 
-- From dev azure, create a project. Put output
-
-- Add github repo to this project. To do that you should already ssh key
-
-- Delete azure pipeline yaml
+- Add github repo to this project. For that you should install azure pipelines in github in marketplaces (see this)
+  ![alt text](azwebapp)
 
 - Choose the azure app service already created
+  ![alt text](azwebapp)
 
 - Create a pipeline for this project from azure pipelines. Choose the template "python app and stuff".
+  ![alt text](azwebapp)
+
+- Update the script part of yaml file with the following
+
+```
+        - script: make setup
+            workingDirectory: $(projectRoot)
+            displayName: "setup virtual env"
+
+          - script: make install
+            workingDirectory: $(projectRoot)
+            displayName: "Install requirements"
+
+          - script: make lint
+            workingDirectory: $(projectRoot)
+            displayName: "lint"
+
+          - script: make test
+            workingDirectory: $(projectRoot)
+            displayName: "load testing"
+
+```
 
 - Save and run. You can check in your github repo that azurepipelines.yml already created.
+  ![alt text](azwebapp)
 
 - Check that your pipelines is finished and already deployed the app
+  ![alt text](azwebapp)
 
-- Update the script part with the followin
-  make setup
-  make install
-  make lint
-
-- Now to check that your continuous delivery cycle is well set, do some changes in your app. For exemple : Push this changes
+- Now to check that your continuous delivery cycle is well set, do some changes in your text app. For exemple : Push this changes
 
 - The pipeline should run automaticaly and the new app deployed should show this:
 
@@ -83,7 +131,7 @@ Port: 443
 {"prediction":[20.35373177134412]}
 ```
 
-- You can from azure cloud shell run this command az webapp log tail to see the live logs
+- You can from azure cloud shell run this command az webapp log tail to see the live logs and run make then see logs
 
 ## Enhancements
 
