@@ -1,1 +1,1 @@
-az webapp -n <yourAppName>
+az webapp -n flask-sklearn1

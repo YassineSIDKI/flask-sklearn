@@ -35,4 +35,7 @@ class flask_sklearn(HttpUser):
 
         myheaders = {'Content-Type': 'application/json'}
 
-        self.client.post("/predict", json=json_request, headers=myheaders)
+        response = self.client.post(
+            "/predict", json=json_request, headers=myheaders)
+
+        assert response.status_code == 200

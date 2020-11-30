@@ -71,11 +71,11 @@ jobs:
         make test
 ```
 
-After you save and run, you can see in github actions tab a job running
+After you save and run. Check that the job is successfuly finished
 
 ![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/githubjob.png?raw=true)
 
-To create azure webapp service, from azure shell run `./commands.sh` from root folder
+To create azure webapp service, from azure shell run `./commands.sh` from root folder. You should see like the output below if the app services deployed:
 
 ![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/az%20webapp.png?raw=true)
 
