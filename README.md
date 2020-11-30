@@ -21,7 +21,7 @@ We use for planning trello to track tasks as tickets and spreadsheet with weekly
 
 ## Architecture
 
-![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/diagram-v2.png?raw=true)
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/diagram-v2.png?raw=true)
 
 ## Instructions
 
@@ -29,7 +29,7 @@ Create a new github repository
 
 From azure cloud shell, clone this repo
 
-![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/clonerepo.png?raw=true)
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/clonerepo.png?raw=true)
 
 You can run this command to check that the Makefile commands working. If you face some error during locust install, check that you have python version >=3.6
 
@@ -41,7 +41,7 @@ Delete all .yml files and change the <yourAppName> in `make_predict_azure_app.sh
 
 From your github repo, add new github actions workflow
 
-![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/githubactions.png?raw=true)
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/githubactions.png?raw=true)
 
 Choose Python application workflow and change the `jobs` part in yaml file with the following
 
@@ -71,45 +71,45 @@ jobs:
 
 After you save and run, you can see in github actions tab a job running
 
-![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/jobgithub.png?raw=true)
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/jobgithub.png?raw=true)
 
 To create azure webapp service, from azure shell run `./commands.sh` from root folder
 
-![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/az%20webapp.png?raw=true)
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/az%20webapp.png?raw=true)
 
 You can check that your project is correctly deployed by visiting the URL figured in output. You should see result like:
 
-![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/homepage.png?raw=true)
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/homepage.png?raw=true)
 
 From dev azure, create a project.
 
-![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/createprojectazure1.png?raw=true)
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/createprojectazure1.png?raw=true)
 
-![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/createprojectazure2.png?raw=true)
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/createprojectazure2.png?raw=true)
 
-![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/createprojectazure3.png?raw=true)
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/createprojectazure3.png?raw=true)
 
 Add github repo to this project and choose your repo
 
-![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/azurerepo.png?raw=true)
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/azurerepo.png?raw=true)
 
-![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/azurepipelinesRepoGithub.png?raw=true)
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/azurepipelinesRepoGithub.png?raw=true)
 
 Choose the azure app service already created
 
-![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/choosesubscription.png?raw=true)
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/choosesubscription.png?raw=true)
 
-![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/choosewebapp.png?raw=true)
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/choosewebapp.png?raw=true)
 
 Create a pipeline for this project from azure pipelines. Choose the template "python app and stuff".
 
-![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/azurepipelines.png?raw=true)
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/azurepipelines.png?raw=true)
 
-![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/choosewebapp.png?raw=true)
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/choosewebapp.png?raw=true)
 
 Update the script part of yaml file with the following
 
-![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/azurepipelinesyaml.png?raw=true)
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/azurepipelinesyaml.png?raw=true)
 
 ```
         - script: make setup
@@ -134,7 +134,7 @@ Save and run. You can check in your github that azurepipelines.yml already creat
 
 Check that your pipelines is finished and already deployed the app
 
-![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/azurepipelinesrunnning.png?raw=true)
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/azurepipelinesrunnning.png?raw=true)
 
 Good news : Your continuous delivery cycle is set. To check that your continuous delivery cycle is well set, do some changes in your app.py and push.
 
@@ -158,7 +158,7 @@ def home():
 
 The pipeline should run automaticaly and the deployment is done successfuly. Check the app url and check the home page. You should get this result
 
-![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/homepagechanged.png?raw=true)
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/homepagechanged.png?raw=true)
 
 From azure shell, run the command and check the result
 
