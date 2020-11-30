@@ -170,7 +170,13 @@ Port: 443
 {"prediction":[20.35373177134412]}
 ```
 
+![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/prediction.png?raw=true)
+
 You can from azure cloud shell run this command az webapp log tail to see the live logs and run make then see logs
+
+To run locust test, run the command `make test`
+
+![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/locust.png?raw=true)
 
 ## Enhancements
 
