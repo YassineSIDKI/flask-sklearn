@@ -1,1 +1,1 @@
-az webapp -n flask-sklearn1
+az webapp -n flask-sklearn-1
