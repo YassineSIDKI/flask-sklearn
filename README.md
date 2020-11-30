@@ -184,8 +184,6 @@ To run locust test, run the command `make test`
 
 ## Enhancements
 
-Some improvment ideas:
-
 - Add different environments : dev, qa and prod
 - Add terrafom file to manage needed resources
 
