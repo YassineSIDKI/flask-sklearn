@@ -81,16 +81,25 @@ jobs:
 
   ![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/createprojectazure2.png?raw=true)
 
-- Add github repo to this project. For that you should install azure pipelines in github in marketplaces (see this)
-  ![alt text](azwebapp)
+![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/createprojectazure3.png?raw=true)
+
+- Add github repo to this project and choose your repo
+  ![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/azurerepo.png?raw=true)
+
+  ![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/azurepipelinesRepoGithub.png?raw=true)
 
 - Choose the azure app service already created
-  ![alt text](azwebapp)
+  ![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/choosesubscription.png?raw=true)
+
+  ![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/choosewebapp.png?raw=true)
 
 - Create a pipeline for this project from azure pipelines. Choose the template "python app and stuff".
-  ![alt text](azwebapp)
+  ![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/azurepipelines.png?raw=true)
+
+  ![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/choosewebapp.png?raw=true)
 
 - Update the script part of yaml file with the following
+  ![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/azurepipelinesyaml.png?raw=true)
 
 ```
         - script: make setup
