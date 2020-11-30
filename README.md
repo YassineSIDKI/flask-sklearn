@@ -4,7 +4,7 @@
 
 ## Introduction
 
-In this project, you will focus on creating a continuous delivery cycle with azure pipelines, using a given code for maching learning application (that you will not develop yourself), and azure portal to create environement on which your application will be deployed.
+In this project, you will focus on creating a continuous delivery cycle with azure pipelines, using a given code for machine learning application (that you will not develop yourself), and azure portal to create environement on which your application will be deployed.
 
 ## Project Plannig
 
@@ -174,9 +174,9 @@ You can from azure cloud shell run this command az webapp log tail to see the li
 
 Some improvment ideas:
 
-- Add terrafom file to create needed resources in case we want to use specific resource group for example
 - Add different environments : dev, qa and prod
+- Add terrafom file to manage needed resources
 
 ## Demo
 
-<TODO: Add link Screencast on YouTube>
+https://youtu.be/3g2usvuJdd8
