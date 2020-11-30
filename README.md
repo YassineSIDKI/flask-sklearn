@@ -77,7 +77,9 @@ jobs:
   ![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/homepage.png?raw=true)
 
 - From dev azure, create a project.
-  ![alt text](create project azure)
+  ![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/createprojectazure1.png?raw=true)
+
+  ![alt text](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/createprojectazure2.png?raw=true)
 
 - Add github repo to this project. For that you should install azure pipelines in github in marketplaces (see this)
   ![alt text](azwebapp)
