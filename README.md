@@ -144,9 +144,11 @@ def home():
     return html.format(format)
 ```
 
-- The pipeline should run automaticaly and the new app deployed should show this:
+- The pipeline should run automaticaly and the deployment is done successfuly. Check the app url and check the home page. You should get this result
 
-- Check also that your app is running correctly by doing a prediction. run script ./make...
+![alt text]()
+
+- from azure shell, run the command and check the result
 
 ```bash
 udacity@Azure:~$ ./make_predict_azure_app.sh
@@ -162,7 +164,6 @@ Some improvment ideas:
 
 - Add terrafom file to create needed resources in case we want to use specific resource group for example
 - Add different environments : dev, qa and prod
--
 
 ## Demo
 
