@@ -6,18 +6,18 @@
 
 In this project, you will focus on creating a continuous delivery cycle with azure pipelines, using a given code for maching learning application (that you will not develop yourself) which will be hosted in github, and azure portal to create environement on which your application will be deployed.
 
-## Project Plan
+## Project Plannig
 
 We use for planning trello to track tasks as tickets and spreadsheet with weekly planning per year
 
-- A link to a Trello board for the project ![alt text](https://trello.com/b/M5gD0IY3/udacity)
+- [A link to a Trello board for the project](https://trello.com/b/M5gD0IY3/udacity)
 
-- A link to a spreadsheet that includes the original and final project plan> ![alt text](https://docs.google.com/spreadsheets/d/1Rr-CEzN8tzZDGDlJFyEK2E43slvz5DyTLUpM4616OeA/edit#gid=1348135932)
+- [A link to a spreadsheet that includes the original and final project plan](https://docs.google.com/spreadsheets/d/1Rr-CEzN8tzZDGDlJFyEK2E43slvz5DyTLUpM4616OeA/edit#gid=1348135932)
 
 ## Prerequisites
 
-- Have a azure account
-- Have a github account
+- Have a [azure](https://azure.microsoft.com/en-us/free/) account and Azure cloud shell activated
+- Have a [github](https://github.com/) account
 
 ## Architecture
 
@@ -25,17 +25,28 @@ We use for planning trello to track tasks as tickets and spreadsheet with weekly
 
 ## Instructions
 
-#### Setup environment
-
-- Create a new repository in github
+- Create a new github repository
 
 - From azure cloud shell, clone this repo
+  ![alt text](output)
 
-- Push your code to newly created github repo
+- Push your code to the newly created github repo
 
-- Run the project on azure app service. For that use the commande az webapp up --name "". Be sure that. Put output here
+- Run make setup command
 
-az webapp output
+- Activate virtual env python source
+
+- Run make all
+  ![alt text](make all)
+
+- From your github repo, add new github actions workflow
+  ![alt text](github actions)
+
+- Replace <yourappname> in commands.sh then run the command ./commands.sh. The <yourappname> value is the same you will use in the file make_prediction
+
+![alt text](azwebapp)
+
+-
 
 - If your project is successfuly deployed you should have the following output-like: You can return to for more information [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
