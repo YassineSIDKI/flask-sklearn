@@ -158,7 +158,11 @@ def home():
     return html.format(format)
 ```
 
-The pipeline should run automaticaly and the deployment is done successfuly. Check the app url and check the home page. You should get this result
+The pipeline should run automaticaly and the deployment is done successfuly.
+
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/successpipeline.png?raw=true)
+
+Check the app url and check the home page. You should get this result
 
 ![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/homepagechanged.png?raw=true)
 
