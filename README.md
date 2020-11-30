@@ -37,6 +37,8 @@ You can run this command to check that the Makefile commands working. If you fac
 make setup && source ~/.udacity-devops/bin/activate && make all
 ```
 
+![alt text]()
+
 Delete all .yml files and change the <yourAppName> in `make_predict_azure_app.sh` and `commands.sh` by name you will give to your web app. It should be the same name in both files. Then push the project to github repo
 
 From your github repo, add new github actions workflow
