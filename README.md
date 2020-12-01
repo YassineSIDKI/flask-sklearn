@@ -81,7 +81,7 @@ To create azure webapp service, from azure shell run `./commands.sh` from root f
 
 Here is the app services view in azure portal
 
-![]()
+![](https://github.com/YassineSIDKI/flask-sklearn/blob/main/screens/appservicespage.png?raw=true)
 
 You can check that your project is correctly deployed by visiting the URL figured in output. You should see result like:
 
